@@ -1,6 +1,6 @@
 # Rspec::Xsd
 
-TODO: Write a gem description
+Rspec matcher for ensuring XML validates against a given XSD
 
 ## Installation
 
