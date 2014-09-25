@@ -1,5 +1,9 @@
 # Rspec::Xsd
 
+[![Build Status](https://travis-ci.org/invisiblelines/rspec-xsd.svg)](https://travis-ci.org/invisiblelines/rspec-xsd)
+
+## Overview
+
 Rspec matcher for ensuring XML validates against a given XSD
 
 ## Installation
