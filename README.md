@@ -1,6 +1,7 @@
 # Rspec::Xsd
 
 [![Build Status](https://travis-ci.org/invisiblelines/rspec-xsd.svg)](https://travis-ci.org/invisiblelines/rspec-xsd)
+[![Code Climate](https://codeclimate.com/github/invisiblelines/rspec-xsd/badges/gpa.svg)](https://codeclimate.com/github/invisiblelines/rspec-xsd)
 
 ## Overview
 
