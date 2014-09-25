@@ -18,15 +18,15 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rspec"
-  spec.add_dependency "nokogiri"
+  spec.add_dependency "rspec", '~> 3'
+  spec.add_dependency "nokogiri", '~> 1.6'
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency 'simplecov'
-  spec.add_development_dependency 'codeclimate-test-reporter'
-  spec.add_development_dependency 'guard'
-  spec.add_development_dependency 'guard-rspec'
-  spec.add_development_dependency 'rb-inotify'
-  spec.add_development_dependency 'rb-fsevent'
+  spec.add_development_dependency "rake", '~> 0'
+  spec.add_development_dependency 'simplecov', '~> 0.9.0'
+  spec.add_development_dependency 'codeclimate-test-reporter', '~> 0.4.0'
+  spec.add_development_dependency 'guard', '~> 2.6'
+  spec.add_development_dependency 'guard-rspec', '~> 4.3'
+  spec.add_development_dependency 'rb-inotify', '~> 0.9'
+  spec.add_development_dependency 'rb-fsevent', '~> 0.9'
 end
