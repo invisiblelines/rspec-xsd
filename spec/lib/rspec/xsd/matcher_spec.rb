@@ -38,7 +38,7 @@ describe Rspec::Xsd::Matcher do
     end
 
     it 'returns message with validation errors' do
-      expect(matcher.failure_message).to eq("expected that XML would validate against schema.xsd\r\n\r\nElement 'note': Missing child element(s). Expected is ( body ).")
+      expect(matcher.failure_message).to match(/expected that XML would validate against schema.xsd\r\n\r\n/)
     end
   end
 
