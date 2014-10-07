@@ -11,9 +11,11 @@ Rspec matcher for ensuring XML validates against a given XSD
 
 Add this line to your application's Gemfile:
 
-    group :test do
-      gem 'rspec-xsd'
-    end
+```ruby
+group :test do
+  gem 'rspec-xsd'
+end
+```
 
 And then execute:
 
@@ -31,19 +33,25 @@ $ gem install rspec-xsd
 
 Require the gem in your spec_helper
 
-    require 'rspec-xsd'
+```ruby
+require 'rspec-xsd'
+```
 
 Now include the matcher in your specs
 
-    RSpec.configure do |config|
-      config.include Rspec::Xsd
-    end
+```ruby
+RSpec.configure do |config|
+  config.include Rspec::Xsd
+end
+```
 
 You can validate either an XML string or a Nokogiri::XML::Document.
 
 You can check that XML validates against a given schema by passing in a Nokogiri::XML::Schema object
 
-    expect(xml).to pass_validation(xsd)
+```ruby
+expect(xml).to pass_validation(xsd)
+```
 
 or by passing in the path to your XSD
 
