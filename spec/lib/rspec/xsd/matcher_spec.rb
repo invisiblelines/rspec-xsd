@@ -4,7 +4,7 @@ describe Rspec::Xsd::Matcher do
   let(:path)        { File.join(File.expand_path(File.dirname(__FILE__)), '..', '..', '..', 'fixtures') }
   let(:schema_path) { File.join(path, 'schema.xsd') }
 
-  let(:matcher) { Rspec::Xsd::Matcher.new(schema_path) }
+  let(:matcher) { Rspec::Xsd::Matcher.new(schema_path, File.basename(schema_path)) }
 
   describe '#matches?' do
     let(:xml) { File.read(File.join(path, 'valid.xml')) }
@@ -15,11 +15,24 @@ describe Rspec::Xsd::Matcher do
       end
     end
 
+    context 'with XML object' do
+      it 'returns true' do
+        expect(matcher.matches?(Nokogiri::XML(xml))).to be(true)
+      end
+    end
+
     context 'with invalid XML' do
       let(:xml) { File.read(File.join(path, 'invalid.xml')) }
 
       it 'returns false' do
         expect(matcher.matches?(xml)).to be(false)
+      end
+    end
+
+    context 'with schema object' do
+      it 'returns true' do
+        schema = Nokogiri::XML::Schema(File.read(schema_path))
+        expect(Rspec::Xsd::Matcher.new(schema, File.basename(schema_path)).matches?(xml)).to be(true)
       end
     end
   end

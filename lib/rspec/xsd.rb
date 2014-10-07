@@ -7,8 +7,8 @@ module Rspec
 
   module Xsd
 
-    def pass_validation(schema_path)
-      Matcher.new(schema_path)
+    def pass_validation(schema, schema_name = nil)
+      Matcher.new(schema, schema_name)
     end
 
   end
