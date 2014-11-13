@@ -1,9 +1,12 @@
-require 'simplecov'
-require 'codeclimate-test-reporter'
+if ENV['CODECLIMATE_REPO_TOKEN']
+  require 'codeclimate-test-reporter'
 
-SimpleCov.start
+  CodeClimate::TestReporter.start
+else
+  require 'simplecov'
 
-CodeClimate::TestReporter.start
+  SimpleCov.start
+end
 
 require 'rspec'
 require 'rspec/xsd'
