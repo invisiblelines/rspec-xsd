@@ -1,11 +1,11 @@
-# Rspec::Xsd
+# RSpec::XSD
 
 [![Build Status](https://travis-ci.org/invisiblelines/rspec-xsd.svg)](https://travis-ci.org/invisiblelines/rspec-xsd)
 [![Code Climate](https://codeclimate.com/github/invisiblelines/rspec-xsd/badges/gpa.svg)](https://codeclimate.com/github/invisiblelines/rspec-xsd)
 
 ## Overview
 
-Rspec matcher for ensuring XML validates against a given XSD
+RSpec matcher for ensuring XML validates against a given XSD
 
 ## Installation
 
@@ -23,7 +23,7 @@ And then execute:
 $ bundle
 ```
 
-Or install it yourself as:
+Or install it yourself with:
 
 ```
 $ gem install rspec-xsd
@@ -34,14 +34,14 @@ $ gem install rspec-xsd
 Require the gem in your spec_helper
 
 ```ruby
-require 'rspec-xsd'
+require 'rspec/xsd'
 ```
 
 Now include the matcher in your specs
 
 ```ruby
 RSpec.configure do |config|
-  config.include Rspec::Xsd
+  config.include RSpec::XSD
 end
 ```
 
