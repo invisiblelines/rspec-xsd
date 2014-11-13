@@ -13,5 +13,5 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 
-  config.include Rspec::Xsd
+  config.include RSpec::XSD
 end

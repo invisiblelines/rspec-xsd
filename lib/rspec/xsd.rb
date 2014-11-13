@@ -3,9 +3,9 @@ require "nokogiri"
 require "rspec/xsd/version"
 require 'rspec/xsd/matcher'
 
-module Rspec
+module RSpec
 
-  module Xsd
+  module XSD
 
     def pass_validation(schema, schema_name = nil)
       Matcher.new(schema, schema_name)

@@ -1,6 +1,6 @@
-module Rspec
+module RSpec
 
-  module Xsd
+  module XSD
 
     class Matcher
 

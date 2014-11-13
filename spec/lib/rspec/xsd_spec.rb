@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Rspec::Xsd do
+describe RSpec::XSD do
   let(:path)        { File.join(File.expand_path(File.dirname(__FILE__)), '..', '..', 'fixtures') }
   let(:schema_path) { File.join(path, 'schema.xsd') }
 

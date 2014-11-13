@@ -5,7 +5,7 @@ require 'rspec/xsd/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rspec-xsd"
-  spec.version       = Rspec::Xsd::VERSION
+  spec.version       = RSpec::XSD::VERSION
   spec.authors       = ["Kieran Johnson"]
   spec.email         = ["hello@invisiblelines.com"]
   spec.summary       = %q{Rspec matcher for ensuring XML validates against a given XSD}
